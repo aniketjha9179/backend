@@ -64,7 +64,7 @@ userSchema.methods.isPasswordCorrect = async function (password) {
 
 }
 userSchema.methods.generateAccessToken=  function(){
-  // .sing takes 2-3 argus
+  // .sign takes 2-3 argus
   return jwt.sign(
     {
       _id:this._id,
